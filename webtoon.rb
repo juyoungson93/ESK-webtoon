@@ -8,4 +8,8 @@ def new_webtoon?
   a.search('//td[@class="title"]/a')[0].text =~ /\(\d+\)\s*\z/
 end
 
+if__FILE__== $0
 puts new_webtoon? ? "Time for sleep!" : "Webtoon Time!"
+end
+
+
